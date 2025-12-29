@@ -7,7 +7,7 @@ const pricingTiers = [
     name: "Core Protection",
     price: "€995",
     period: "/month",
-    description: "Essential security for growing businesses",
+    description: "Essential security for freelancers and growing businesses",
     icon: Shield,
     popular: false,
     features: [
@@ -23,7 +23,7 @@ const pricingTiers = [
     name: "Advanced Defense",
     price: "€1,995",
     period: "/month",
-    description: "Complete security for established organizations",
+    description: "Complete security for startups and established organizations",
     icon: Zap,
     popular: true,
     features: [

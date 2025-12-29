@@ -46,7 +46,7 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
             Enterprise-grade protection for your websites, email infrastructure, 
-            and digital identities. Built for businesses that demand uncompromising security.
+            and digital identities. Built for freelancers, startups, and enterprises that demand uncompromising security.
           </motion.p>
 
           {/* CTA Buttons */}
