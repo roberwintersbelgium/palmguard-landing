@@ -40,30 +40,12 @@ const TrustSection = () => {
             Trusted by Industry Leaders
           </span>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
-            Enterprise Trust
+            Built on Trust
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From startups to enterprises, organizations trust Palm Guard 
+            From freelancers to startups to enterprises, professionals trust Palm Guard 
             to protect their most critical assets.
           </p>
-        </motion.div>
-
-        {/* Logo Placeholder Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-wrap justify-center gap-8 mb-20"
-        >
-          {[1, 2, 3, 4, 5].map((i) => (
-            <div
-              key={i}
-              className="w-32 h-12 rounded-lg bg-secondary/50 border border-border flex items-center justify-center"
-            >
-              <span className="text-xs text-muted-foreground">Client Logo</span>
-            </div>
-          ))}
         </motion.div>
 
         {/* Security Principles */}
