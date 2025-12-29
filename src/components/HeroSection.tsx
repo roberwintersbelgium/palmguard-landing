@@ -57,7 +57,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <Button className="btn-primary text-base">
-              Get Protected
+              Login
             </Button>
             <Button variant="outline" className="btn-secondary text-base">
               Request Security Audit

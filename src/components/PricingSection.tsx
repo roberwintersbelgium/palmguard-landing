@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const pricingTiers = [
   {
     name: "Core Protection",
-    price: "€995",
+    price: "€1,200",
     period: "/month",
     description: "Essential security for freelancers and growing businesses",
     icon: Shield,
@@ -21,7 +21,7 @@ const pricingTiers = [
   },
   {
     name: "Advanced Defense",
-    price: "€1,995",
+    price: "€2,400",
     period: "/month",
     description: "Complete security for startups and established organizations",
     icon: Zap,
@@ -73,7 +73,7 @@ const PricingSection = () => {
             Pricing
           </span>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
-            Investment in Security
+            Invest in your Security
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Choose the protection level that matches your organization's needs. 
@@ -90,20 +90,23 @@ const PricingSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className={`relative rounded-2xl p-8 ${
-                tier.popular
-                  ? "pricing-popular"
-                  : "bg-card border border-border"
-              }`}
+              className="relative"
             >
               {/* Popular Badge */}
               {tier.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                   <span className="bg-gradient-primary text-primary-foreground text-xs font-bold px-4 py-1.5 rounded-full">
                     Most Popular
                   </span>
                 </div>
               )}
+              <div
+                className={`rounded-2xl p-8 ${
+                  tier.popular
+                    ? "pricing-popular"
+                    : "bg-card border border-border"
+                }`}
+              >
 
               {/* Tier Header */}
               <div className="text-center mb-8">
@@ -150,6 +153,7 @@ const PricingSection = () => {
               >
                 {tier.cta}
               </Button>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -164,6 +168,8 @@ const PricingSection = () => {
         >
           All plans include 30-day onboarding support and a security assessment. 
           No long-term contracts required.
+          <br />
+          Prepay for one year and receive a 5% discount on your monthly rate.
         </motion.p>
       </div>
 

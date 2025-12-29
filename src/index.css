@@ -144,7 +144,7 @@
 
   /* Pricing Card Popular */
   .pricing-popular {
-    @apply relative;
+    @apply relative overflow-hidden;
     background: linear-gradient(180deg, hsl(var(--navy-medium)), hsl(var(--deep-navy)));
     border: 1px solid hsl(var(--cyber-cyan) / 0.5);
     box-shadow: 0 0 60px hsl(var(--cyber-cyan) / 0.2);
