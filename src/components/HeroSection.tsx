@@ -56,8 +56,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
-            <Button className="btn-primary text-base">
-              Login
+            <Button asChild className="btn-primary text-base">
+              <a href="https://palmguard-app.lovable.app">Login</a>
             </Button>
             <Button variant="outline" className="btn-secondary text-base">
               Request Security Audit
