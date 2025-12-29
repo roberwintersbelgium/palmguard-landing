@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <Button asChild className="btn-primary text-sm px-6 py-2">
-              <a href="https://palmguard-app.lovable.app">Login</a>
+              <a href="https://palmguard-app.lovable.app/">Login</a>
             </Button>
           </div>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-border">
                 <Button asChild className="btn-primary">
-                  <a href="https://palmguard-app.lovable.app">Login</a>
+                  <a href="https://palmguard-app.lovable.app/">Login</a>
                 </Button>
               </div>
             </div>
