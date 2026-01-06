@@ -86,8 +86,8 @@ const FinalCTASection = () => {
               Request Consultation
               <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" className="btn-secondary text-base">
-              Start Protection
+            <Button asChild variant="outline" className="btn-secondary text-base">
+              <a href="https://palmguard-app.vercel.app/">Login</a>
             </Button>
           </motion.div>
 

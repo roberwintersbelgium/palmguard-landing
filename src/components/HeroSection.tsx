@@ -57,7 +57,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <Button asChild className="btn-primary text-base">
-              <a href="https://palmguard-app.lovable.app/">Login</a>
+              <a href="https://palmguard-app.vercel.app/">Login</a>
             </Button>
             <Button variant="outline" className="btn-secondary text-base">
               Request Security Audit
