@@ -14,7 +14,7 @@ const pricingTiers = [
       "Website firewall & DDoS protection",
       "Basic CDN & performance shielding",
       "Email phishing & spam protection",
-      "Weekly security reports",
+      "Financial asset protection",
       "Business-hours support",
     ],
     cta: "Start Protection",
