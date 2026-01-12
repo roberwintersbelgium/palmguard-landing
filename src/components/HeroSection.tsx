@@ -57,7 +57,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Enterprise-grade protection for your websites, email infrastructure, financial and digital identities.
+            Enterprise-grade protection for your websites, email infrastructure, financial and digital identities. Built for freelancers, startups, and enterprises that demand uncompromising security.
           </motion.p>
 
           {/* CTA Buttons */}
