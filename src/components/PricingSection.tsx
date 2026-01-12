@@ -41,7 +41,7 @@ const pricingTiers = [
     name: "Enterprise",
     price: "Custom",
     period: " Pricing",
-    description: "Fully managed security for enterprises",
+    description: "Managed security custom to your need",
     icon: Crown,
     popular: false,
     features: [
@@ -168,8 +168,6 @@ const PricingSection = () => {
         >
           All plans include 30-day onboarding support and a security assessment. 
           No long-term contracts required.
-          <br />
-          Prepay for one year and receive a 5% discount on your monthly rate.
         </motion.p>
       </div>
 
