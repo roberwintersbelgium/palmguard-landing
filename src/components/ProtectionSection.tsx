@@ -25,14 +25,14 @@ const protectionCategories = [
     ],
   },
   {
-    title: "Identity Protection",
+    title: "Identity & Financials",
     icon: User,
     description: "Safeguard your digital identities and credentials.",
     features: [
       { icon: Eye, label: "Identity Breach Monitoring" },
       { icon: Database, label: "Dark Web Scans" },
       { icon: Lock, label: "Account Takeover Prevention" },
-      { icon: Shield, label: "Credential Protection" },
+      { icon: Shield, label: "Credit Card Leak" },
     ],
   },
   {

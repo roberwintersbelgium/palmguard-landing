@@ -1,9 +1,21 @@
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Shield, Activity, Lock, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedBackground from "./AnimatedBackground";
 
 const HeroSection = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const stats = [
     { icon: Activity, label: "24/7 Monitoring" },
     { icon: Lock, label: "Zero-Trust Architecture" },
@@ -45,8 +57,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Enterprise-grade protection for your websites, email infrastructure, 
-            and digital identities. Built for freelancers, startups, and enterprises that demand uncompromising security.
+            Enterprise-grade protection for your websites, email infrastructure, financial and digital identities.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -87,20 +98,25 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.6 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2"
-          >
-            <div className="w-1 h-2 bg-primary rounded-full" />
-          </motion.div>
-        </motion.div>
+        <AnimatePresence>
+          {!isScrolled && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ delay: 1.5, duration: 0.6 }}
+              className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50"
+            >
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+                className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2"
+              >
+                <div className="w-1 h-2 bg-primary rounded-full" />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );

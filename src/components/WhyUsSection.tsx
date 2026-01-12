@@ -103,8 +103,8 @@ const WhyUsSection = () => {
             {[
               { value: "99.99%", label: "Uptime SLA" },
               { value: "< 50ms", label: "Response Time" },
-              { value: "1M+", label: "Threats Blocked Daily" },
-              { value: "500+", label: "Protected Organizations" },
+              { value: "1k+", label: "Threats Blocked Daily" },
+              { value: "50+", label: "Protected Organizations" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
